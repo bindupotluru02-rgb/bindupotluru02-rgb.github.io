@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hima Bindu | Java Backend Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        h2.section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .education-item {
+            background: #1e293b;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Hima Bindu</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div>
+
+            <h1>
+                Hi, I'm <span>Hima Bindu</span>
+            </h1>
+
+            <h3>
+                Java Backend Developer
+            </h3>
+
+            <p>
+                Computer Science Engineering student passionate about
+                Java, backend development, databases and building
+                practical software solutions.
+            </p>
+
+            <a class="btn" href="#projects">
+                View My Projects
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about">
+
+            <p>
+                I am a Computer Science Engineering student at
+                Vardhaman College of Engineering, Hyderabad.
+                I am currently focusing on Java and backend development.
+                I enjoy solving programming problems and learning
+                technologies that help me build reliable applications.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">Data Structures</div>
+            <div class="skill">OOP</div>
+            <div class="skill">DBMS</div>
+            <div class="skill">Git & GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+        <div class="projects">
+
+            <div class="card">
+
+                <h3>
+                    Personalized Intelligent Learning System
+                </h3>
+
+                <p>
+                    An intelligent learning platform designed to
+                    personalize learning paths and assessments
+                    according to a learner's skills, performance
+                    and target examination.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Career Path Generation
+                </h3>
+
+                <p>
+                    A career guidance concept that uses learner
+                    performance, skills and prerequisites to
+                    generate personalized career and learning
+                    roadmaps.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Data Analytics Projects
+                </h3>
+
+                <p>
+                    Worked with datasets and analytics concepts
+                    involving SQL, data visualization, business
+                    metrics and dashboard-style analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education">
+
+            <div class="education-item">
+
+                <h3>
+                    B.Tech - Computer Science Engineering
+                </h3>
+
+                <p>
+                    Vardhaman College of Engineering, Hyderabad
+                </p>
+
+                <p>
+                    2023 - 2027
+                </p>
+
+            </div>
+
+            <div class="education-item">
+
+                <h3>
+                    Intermediate - MPC
+                </h3>
+
+                <p>
+                    Narayana Junior College, Hyderabad
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <div class="contact">
+
+            <p>
+                GitHub:
+                <a href="https://github.com/bindupotluru02-rgb"
+                   target="_blank">
+                    github.com/bindupotluru02-rgb
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="#" target="_blank">
+                    Add your LinkedIn
+                </a>
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Hima Bindu. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
